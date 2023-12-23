@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <style>
+        @font-face {
+            font-family: 'ArtFont';
+            src: url('MaShanZheng-Regular.ttf')
+        }
+
+        h1 {
+            text-align: center;
+            background: linear-gradient(rgb(96, 96, 242) 20%, pink 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 46px;
+            font-family: 'ArtFont', sans-serif;
+        }
+
+        form {
+            width: 60vw;
+            max-width: 368px;
+            min-width: 300px;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            border: none;
+            padding: 2rem 0;
+        }
+
+        label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        input {
+            margin: 10px 0 0 0;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 17%;
+            position: relative;
+            left: 150px;
+            top: -35px;
+            background-color: lightcyan;
+
+        }
+    </style>
+</head>
+<body>
+<h1>用户注册</h1>
+<form method="post" action="/registerServlet">
+    <fieldset>
+        <label for="uname">用户名:<input name="username" id="uname" type="text" required></label>
+        <label for="password">密码:<input name="password" id="password" type="password" required></label>
+    </fieldset>
+    <input type="submit" value="注册" id="register">
+</form>
+</body>
+</html>
